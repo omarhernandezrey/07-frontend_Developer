@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Especifica la codificación de caracteres del documento -->
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Establece el modo de compatibilidad con Internet Explorer -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Establece la configuración de la vista del contenido en dispositivos móviles -->
+    
+    <title>Document</title>
+    <!-- Establece el título del documento -->
+
+    <style>
+        /* Estilos para el contenedor */
+        .container {
+            display: grid;
+            /* Establece el contenedor como un contenedor de cuadrícula */
+            
+            width: 400px;
+            /* Establece el ancho del contenedor en 400px */
+            
+            height: 400px;
+            /* Establece la altura del contenedor en 400px */
+            
+            background: yellowgreen;
+            /* Establece el fondo "yellowgreen" para el contenedor */
+            
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            /* Establece 4 columnas de tamaño flexible */
+            
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            /* Establece 4 filas de tamaño flexible */
+        }
+
+        /* Estilos para los elementos dentro del contenedor */
+        .item {
+            background: pink;
+            /* Establece el fondo "pink" para los elementos */
+        }
+
+        /* Estilos para el primer elemento dentro del contenedor */
+        .container .item:nth-child(1) {
+            grid-column: 1 / 2;
+            /* Establece la posición de la columna del primer elemento */
+        }
+
+        /* Estilos para el segundo elemento dentro del contenedor */
+        .container .item:nth-child(2) {
+            grid-column: 2 / 3;
+            /* Establece la posición de la columna del segundo elemento */
+            
+            grid-row: 2 / 3;
+            /* Establece la posición de la fila del segundo elemento */
+        }
+
+        /* Estilos para el tercer elemento dentro del contenedor */
+        .container .item:nth-child(3) {
+            grid-column: 3 / 4;
+            /* Establece la posición de la columna del tercer elemento */
+            
+            grid-row: 3 / 4;
+            /* Establece la posición de la fila del tercer elemento */
+        }
+
+        /* Estilos para el cuarto elemento dentro del contenedor */
+        .container .item:nth-child(4) {
+            grid-column: 4 / 5;
+            /* Establece la posición de la columna del cuarto elemento */
+            
+            grid-row: 4 / 5;
+            /* Establece la posición de la fila del cuarto elemento */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Contenedor principal con la clase "container" -->
+        
+        <div class="item"></div>
+        <!-- Muestra un elemento con la clase "item" -->
+        
+        <div class="item"></div>
+        <!-- Muestra un elemento con la clase "item" -->
+        
+        <div class="item"></div>
+        <!-- Muestra un elemento con la clase "item" -->
+        
+        <div class="item"></div>
+        <!-- Muestra un elemento con la clase "item" -->
+    </div>
+</body>
+</html>

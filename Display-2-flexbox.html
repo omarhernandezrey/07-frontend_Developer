@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Especifica la codificación de caracteres del documento -->
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Establece el modo de compatibilidad con Internet Explorer -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Establece la configuración de la vista del contenido en dispositivos móviles -->
+    
+    <title>Document</title>
+    <!-- Establece el título del documento -->
+
+    <style>
+        /* Estilos para el contenedor */
+        .container {
+            display: flex;
+            /* Establece el contenedor como un contenedor flexible */
+            
+            background: orange;
+            /* Establece el fondo "orange" para el contenedor */
+            
+            justify-content: center;
+            /* Centra los elementos horizontalmente dentro del contenedor */
+            
+            align-items: center;
+            /* Centra los elementos verticalmente dentro del contenedor */
+            
+            height: 200px;
+            /* Establece la altura del contenedor en 200px */
+        }
+
+        /* Estilos para los elementos dentro del contenedor */
+        .item {
+            width: 30px;
+            /* Establece el ancho de los elementos en 30px */
+            
+            height: 30px;
+            /* Establece la altura de los elementos en 30px */
+            
+            background: purple;
+            /* Establece el fondo "purple" para los elementos */
+        }
+
+        /* Estilos para los elementos impares dentro del contenedor */
+        .container .item:nth-child(2n + 1) {
+            background: cyan;
+            /* Establece el fondo "cyan" para los elementos impares */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Contenedor principal con la clase "container" -->
+        
+        <div class="item"></div>
+        <!-- Muestra un elemento con la clase "item" -->
+        
+        <div class="item"></div>
+        <!-- Muestra un elemento con la clase "item" -->
+        
+        <div class="item"></div>
+        <!-- Muestra un elemento con la clase "item" -->
+        
+        <div class="item"></div>
+        <!-- Muestra un elemento con la clase "item" -->
+    </div>
+</body>
+</html>

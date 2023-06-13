@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            position: absolute;
+            background:lawngreen;
+        }
+        /* Estilos para los elementos div */
+        
+        .one {
+            z-index: 5;
+            /* El elemento con clase "one" se colocará encima del elemento con clase "two" */
+        }
+        
+        .two {
+            z-index: 4;
+            /* El elemento con clase "two" estará detrás del elemento con clase "one" */
+        }
+        
+        .red {
+            width: 200px;
+            height: 200px;
+            background: red;
+            z-index: 6;
+            /* El elemento con clase "red" se colocará por encima de los otros elementos */
+        }
+        
+        .blue {
+            width: 200px;
+            height: 200px;
+            background: blue;
+            z-index: 5;
+            /* El elemento con clase "blue" estará detrás del elemento con clase "red" */
+        }
+        
+        .yellow {
+            width: 200px;
+            height: 200px;
+            background: yellow;
+            z-index: 4;
+            /* El elemento con clase "yellow" estará detrás de los elementos con z-index superiores */
+        }
+
+    </style>
+</head>
+<body>
+   <div class="one">Platzi</div>
+   <!-- Elemento div con clase "one" que se colocará encima del elemento con clase "two" -->
+   
+   <div class="two">Master</div> 
+   <!-- Elemento div con clase "two" que estará detrás del elemento con clase "one" -->
+   
+   <section>
+    <div class="red">Red</div>
+    <!-- Elemento div con clase "red" que se colocará por encima de los otros elementos -->
+    
+    <div class="blue">Blue
+        <!-- Elemento div con clase "blue" que estará detrás del elemento con clase "red" -->
+        
+        <div class="yellow">Yellow</div>
+        <!-- Elemento div con clase "yellow" que estará detrás de los elementos con z-index superiores -->
+    </div>
+   </section>
+</body>
+</html>

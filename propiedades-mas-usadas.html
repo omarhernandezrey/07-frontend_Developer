@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Codificación de caracteres -->
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- Compatibilidad con IE -->
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Configuración de la vista en dispositivos móviles -->
+  
+  <title>Document</title>
+  <!-- Título del documento -->
+
+  <style>
+    section {
+      width: 100%;
+      /* Ancho del elemento section al 100% del ancho de su contenedor */
+      
+      display: flex;
+      /* Mostrar los elementos internos en una línea horizontal */
+      
+      justify-content: center;
+      /* Centrar los elementos horizontalmente dentro del section */
+    }
+    
+    .card {
+      width: 300px;
+      /* Ancho de la tarjeta de 300px */
+      
+      height: 300px;
+      /* Altura de la tarjeta de 300px */
+      
+      background: papayawhip;
+      /* Fondo de la tarjeta en color papayawhip */
+      
+      border-radius: 20px;
+      /* Radio de borde de 20px para la tarjeta */
+      
+      overflow: hidden;
+      /* Ocultar el contenido que excede los límites de la tarjeta */
+    }
+    
+    .card img {
+      width: 100%;
+      /* Ancho de la imagen al 100% del ancho de la tarjeta */
+    }
+    
+    .card p {
+      text-align: center;
+      /* Alinear el texto en el centro de la tarjeta */
+    }
+    
+    .card p:nth-child(3) {
+      color: Turquoise;
+      /* Color del tercer párrafo dentro de la tarjeta en color Turquoise */
+    }
+  </style>
+</head>
+<body>
+  <section>
+    <!-- Sección para alinear y centrar los elementos -->
+    
+    <div class="card">
+      <!-- Tarjeta con clase "card" -->
+      
+      <img src="https://media.istockphoto.com/id/1177291835/es/foto/hombre-con-tableta-trabajando-con-interfaz-de-c%C3%B3digo.jpg?s=1024x1024&w=is&k=20&c=DTh-W_iObFeAcYI-7Pg-5EiFmNnGQH4EkKdYFO8S2-o=" alt="cat">
+      <!-- Imagen dentro de la tarjeta -->
+      
+      <p>Programing</p>
+      <!-- Primer párrafo dentro de la tarjeta -->
+      
+      <p>Love</p>
+      <!-- Segundo párrafo dentro de la tarjeta -->
+    </div>
+  </section>
+</body>
+</html>

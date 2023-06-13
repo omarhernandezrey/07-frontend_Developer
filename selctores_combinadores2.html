@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Especifica la codificación de caracteres del documento -->
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Establece el modo de compatibilidad con Internet Explorer -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Establece la configuración de la vista del contenido en dispositivos móviles -->
+    
+    <title>Document</title>
+    <!-- Establece el título del documento -->
+    
+    <style>
+        /* Estilos para elementos <div> anidados dentro de <div> */
+        div p {
+            color: lime;
+        }
+        /* Establece el color del texto en "lime" para los elementos <p> dentro de <div> */
+
+        /* Estilos para elementos <div> directamente dentro de <div> */
+        div > div {
+            background:plum;
+        }
+        /* Establece el fondo "plum" para los elementos <div> directamente dentro de <div> */
+
+        /* Estilos para elementos con la clase "es" */
+        .es {
+            background: red;
+        }
+        /* Establece el fondo "red" para los elementos con la clase "es" */
+
+        /* Estilos para el elemento <section> que sigue inmediatamente después de <div> */
+        div + section {
+            background: palevioletred;
+        }
+        /* Establece el fondo "palevioletred" para el elemento <section> que sigue a <div> */
+
+        /* Estilos para elementos <p> que siguen después de <div> */
+        div ~ p {
+            color: BLUE;
+        }
+        /* Establece el color del texto en "BLUE" para los elementos <p> que siguen a <div> */
+    </style>
+</head>
+<body>
+<div>
+    <!-- Elemento <div> anidado dentro de otro <div> -->
+    <div>
+        <p>Platzi</p>
+        <!-- Muestra el texto "Platzi" con el estilo de <div p> -->
+        
+        <div class="es"><p>Es</p></div>
+        <!-- Elemento <div> con la clase "es" que contiene un <p> -->
+        <!-- Muestra el texto "Es" con el estilo de <div p> -->
+    </div>
+</div>
+
+<!-- Elementos <p> fuera del <div> anidado -->
+<p>Clase de selectores</p>
+<!-- Muestra el texto "Clase de selectores" -->
+
+<p>Clase de selectores</p>
+<!-- Muestra el texto "Clase de selectores" -->
+
+<!-- Elemento <section> que sigue inmediatamente después de <div> -->
+<section>
+    Es lo mejor
+</section>
+<!-- Muestra el texto "Es lo mejor" con el estilo de <div + section> -->
+
+<div>
+    Master
+</div>
+<!-- Muestra el texto "Master" -->
+
+</body>
+</html>

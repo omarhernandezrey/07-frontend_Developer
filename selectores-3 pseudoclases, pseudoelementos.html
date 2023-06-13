@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Especifica la codificación de caracteres del documento -->
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Establece el modo de compatibilidad con Internet Explorer -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Establece la configuración de la vista del contenido en dispositivos móviles -->
+    
+    <title>Document</title>
+    <!-- Establece el título del documento -->
+    
+    <style>
+        /* Estilos para todos los elementos <p> */
+        p {
+            color: salmon;
+        }
+        /* Establece el color del texto en "salmon" para los elementos <p> */
+
+        /* Estilos para la primera letra de los elementos <p> */
+        p::first-letter{
+            color: teal;
+        }
+        /* Establece el color de la primera letra en "teal" para los elementos <p> */
+
+        /* Agrega contenido antes de los elementos <p> */
+        p::before {
+            content: "💞";
+        }
+        /* Agrega el emoji "💞" antes de los elementos <p> */
+
+        /* Agrega contenido después de los elementos <p> */
+        p::after {
+            content: "☘️";
+        }
+        /* Agrega el emoji "☘️" después de los elementos <p> */
+
+        /* Estilos al pasar el cursor por encima de los elementos <p> */
+        p:hover{
+            color: skyblue;
+        }
+        /* Establece el color del texto en "skyblue" cuando se pasa el cursor por encima de los elementos <p> */
+
+        /* Estilos para el segundo hijo <p> dentro de los elementos <div> */
+        div p:nth-child(2) {
+            color: violet;
+        }
+        /* Establece el color del texto en "violet" para el segundo hijo <p> dentro de los elementos <div> */
+
+        /* Estilos para el atributo "placeholder" de los elementos de entrada (input) */
+        ::placeholder {
+            color: tomato;
+        }
+        /* Establece el color del texto del atributo "placeholder" en "tomato" */
+    </style>
+</head>
+<body>
+    <p>Hola</p>
+    <!-- Muestra el texto "Hola" con los estilos definidos para los elementos <p> -->
+
+    <div>
+        <p>Platzi</p>
+        <!-- Muestra el texto "Platzi" con los estilos definidos para los elementos <p> -->
+
+        <p>Master</p>
+        <!-- Muestra el texto "Master" con los estilos definidos para los elementos <p> -->
+
+        <p>Lo Mejor</p>
+        <!-- Muestra el texto "Lo Mejor" con los estilos definidos para los elementos <p> -->
+
+        <input type="text" placeholder="name">
+        <!-- Muestra un campo de entrada de texto con el atributo "placeholder" definido -->
+    </div>
+</body>
+</html>
